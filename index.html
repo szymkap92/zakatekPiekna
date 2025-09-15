@@ -27,10 +27,10 @@
                     Booksy
                 </a>
                 <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Instagram">
-                    📷
+                    IG
                 </a>
                 <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Facebook">
-                    📘
+                    FB
                 </a>
             </div>
         </div>
@@ -75,8 +75,26 @@
                 <li><a href="pages/kontakt.html">Kontakt</a></li>
                 <li><a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button" style="margin-left: 1rem;">Rezerwacja online</a></li>
             </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" onclick="toggleMobileMenu()">Strona główna</a></li>
+            <li><a href="pages/o-nas/index.html" onclick="toggleMobileMenu()">O nas</a></li>
+            <li><a href="pages/oferta/index.html" onclick="toggleMobileMenu()">Oferta</a></li>
+            <li><a href="pages/galeria/index.html" onclick="toggleMobileMenu()">Galeria</a></li>
+            <li><a href="pages/zespol/index.html" onclick="toggleMobileMenu()">Zespół</a></li>
+            <li><a href="pages/strefa-wiedzy/blog.html" onclick="toggleMobileMenu()">Strefa wiedzy</a></li>
+            <li><a href="pages/kontakt.html" onclick="toggleMobileMenu()">Kontakt</a></li>
+            <li><a href="javascript:void(0)" onclick="redirectToBooksy(); toggleMobileMenu();" class="cta-button">Rezerwacja online</a></li>
+        </ul>
+    </div>
 
     <section class="hero">
         <div class="hero-content">

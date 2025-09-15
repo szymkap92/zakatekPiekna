@@ -350,6 +350,34 @@
     </style>
 </head>
 <body>
+    <!-- Top Contact Bar -->
+    <div style="background: #1a1a1a; padding: 0.8rem 0; border-bottom: 2px solid rgba(224, 208, 205, 0.3); font-size: 0.9rem; position: relative; z-index: 1000; width: 100%;">
+        <div class="section-container" style="display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;">
+            <div style="display: flex; align-items: center; gap: 2.5rem; color: rgba(255, 255, 255, 0.85);">
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span style="color: #E0D0CD; font-size: 0.7rem;">●</span>
+                    <a href="tel:+48792809983" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; transition: all 0.3s ease; font-weight: 300;" onmouseover="this.style.color='#E0D0CD'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'">+48 792 809 983</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span style="color: #E0D0CD; font-size: 0.7rem;">●</span>
+                    <span style="font-weight: 300;">Cmentarna 52c, 39-200 Dębica</span>
+                </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 1.2rem;">
+                <a href="javascript:void(0)" onclick="redirectToBooksy()" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.8rem; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.2rem 0.6rem; border: 1px solid rgba(224, 208, 205, 0.3); border-radius: 3px;" onmouseover="this.style.color='#000'; this.style.background='#E0D0CD'; this.style.borderColor='#E0D0CD'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.background='transparent'; this.style.borderColor='rgba(224, 208, 205, 0.3)'" title="Booksy - Rezerwacje Online">
+                    Booksy
+                </a>
+                <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Instagram">
+                    IG
+                </a>
+                <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Facebook">
+                    FB
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="countdown-banner">
         LIMITOWANA PROMOCJA - Zostało tylko: <span id="countdown" class="countdown-timer">3:00:00</span> - EKSKLUZYWNE RABATY
     </div>
@@ -361,29 +389,8 @@
                 Zakątek Piękna
             </div>
             <ul class="nav-links">
-                <li><a href="../index.html">Start</a></li>
-                <li><a href="zespol/index.html">Zespół</a></li>
+                <li><a href="../index.html">Strona główna</a></li>
                 <li><a href="o-nas/index.html">O nas</a></li>
-                <li class="dropdown">
-                    <a href="#" onclick="return false;">Strefa Wiedzy</a>
-                    <div class="dropdown-content">
-                        <a href="strefa-wiedzy/blog.html">Blog</a>
-                        <a href="strefa-wiedzy/darmowy-ebook.html">Darmowy Ebook</a>
-                        <a href="strefa-wiedzy/domowe-spa.html">Domowe SPA</a>
-                        <a href="cennik/index.html">Cennik</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="promocje/index.html">Promocje</a>
-                    <div class="dropdown-content">
-                        <a href="promocje/red-touch.html">Red Touch</a>
-                        <a href="promocje/dermapen.html">Dermapen</a>
-                        <a href="promocje/morpheus.html">Morpheus8</a>
-                        <a href="promocje/multifrax.html">Multifrax</a>
-                        <a href="promocje/lumecca.html">Lumecca</a>
-                    </div>
-                </li>
-                <li><a href="galeria/index.html">Galeria</a></li>
                 <li class="dropdown">
                     <a href="oferta/index.html">Oferta</a>
                     <div class="dropdown-content">
@@ -397,10 +404,39 @@
                         <a href="oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
                     </div>
                 </li>
+                <li><a href="galeria/index.html">Galeria</a></li>
+                <li><a href="zespol/index.html">Zespół</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="return false;">Strefa wiedzy</a>
+                    <div class="dropdown-content">
+                        <a href="strefa-wiedzy/blog.html">Blog</a>
+                        <a href="strefa-wiedzy/domowe-spa.html">Domowe SPA</a>
+                        <a href="strefa-wiedzy/darmowy-ebook.html">Ebook</a>
+                    </div>
+                </li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button" style="margin-left: 1rem;">Rezerwacja online</a></li>
             </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" onclick="toggleMobileMenu()">×</button>
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html" onclick="toggleMobileMenu()">Strona główna</a></li>
+            <li><a href="o-nas/index.html" onclick="toggleMobileMenu()">O nas</a></li>
+            <li><a href="oferta/index.html" onclick="toggleMobileMenu()">Oferta</a></li>
+            <li><a href="galeria/index.html" onclick="toggleMobileMenu()">Galeria</a></li>
+            <li><a href="zespol/index.html" onclick="toggleMobileMenu()">Zespół</a></li>
+            <li><a href="strefa-wiedzy/blog.html" onclick="toggleMobileMenu()">Strefa wiedzy</a></li>
+            <li><a href="kontakt.html" onclick="toggleMobileMenu()">Kontakt</a></li>
+            <li><a href="javascript:void(0)" onclick="redirectToBooksy(); toggleMobileMenu();" class="cta-button">Rezerwacja online</a></li>
+        </ul>
+    </div>
 
     <section class="contact-hero">
         <div class="hero-content">
