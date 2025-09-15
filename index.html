@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakątek Piękna - Luksusowy Gabinet Kosmetyczny w Dębicy</title>
+    <meta name="description" content="Zakątek Piękna - ekskluzywny salon kosmetyczny w Dębicy. Profesjonalne zabiegi odmładzające: Red Touch, Morpheus8, Lumecca. Elegancja i prestiż.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div style="background: #1a1a1a; padding: 0.8rem 0; border-bottom: 2px solid rgba(224, 208, 205, 0.3); font-size: 0.9rem; position: relative; z-index: 1000; width: 100%;">
+        <div class="section-container" style="display: flex; justify-content: space-between; align-items: center; padding: 0 2rem;">
+            <div style="display: flex; align-items: center; gap: 2.5rem; color: rgba(255, 255, 255, 0.85);">
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span style="color: #E0D0CD; font-size: 0.7rem;">●</span>
+                    <a href="tel:+48792809983" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; transition: all 0.3s ease; font-weight: 300;" onmouseover="this.style.color='#E0D0CD'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'">+48 792 809 983</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span style="color: #E0D0CD; font-size: 0.7rem;">●</span>
+                    <span style="font-weight: 300;">Cmentarna 52c, 39-200 Dębica</span>
+                </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 1.2rem;">
+                <a href="javascript:void(0)" onclick="redirectToBooksy()" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.8rem; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.2rem 0.6rem; border: 1px solid rgba(224, 208, 205, 0.3); border-radius: 3px;" onmouseover="this.style.color='#000'; this.style.background='#E0D0CD'; this.style.borderColor='#E0D0CD'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.background='transparent'; this.style.borderColor='rgba(224, 208, 205, 0.3)'" title="Booksy - Rezerwacje Online">
+                    Booksy
+                </a>
+                <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Instagram">
+                    📷
+                </a>
+                <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Facebook">
+                    📘
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="countdown-banner">
+        LIMITOWANA PROMOCJA - Zostało tylko: <span id="countdown" class="countdown-timer">3:00:00</span> - EKSKLUZYWNE RABATY
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna Logo">
+                Zakątek Piękna
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="pages/o-nas/index.html">O nas</a></li>
+                <li class="dropdown">
+                    <a href="pages/oferta/index.html">Oferta</a>
+                    <div class="dropdown-content">
+                        <a href="pages/oferta/popularne-zabiegi.html">Popularne zabiegi</a>
+                        <a href="pages/oferta/konsultacje.html">Konsultacje kosmetologiczne</a>
+                        <a href="pages/oferta/zabiegi-laserowe.html">Zabiegi laserowe</a>
+                        <a href="pages/oferta/modelujace-sylwetke.html">Zabiegi modelujące sylwetkę</a>
+                        <a href="pages/oferta/radiofrekwencja.html">Radiofrekwencja i odmładzanie</a>
+                        <a href="pages/oferta/mezoterapia.html">Mezoterapia i mikronakłuwanie</a>
+                        <a href="pages/oferta/medycyna-estetyczna.html">Medycyna estetyczna</a>
+                        <a href="pages/oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
+                    </div>
+                </li>
+                <li><a href="pages/galeria/index.html">Galeria</a></li>
+                <li><a href="pages/zespol/index.html">Zespół</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="return false;">Strefa wiedzy</a>
+                    <div class="dropdown-content">
+                        <a href="pages/strefa-wiedzy/blog.html">Blog</a>
+                        <a href="pages/strefa-wiedzy/domowe-spa.html">Domowe SPA</a>
+                        <a href="pages/strefa-wiedzy/darmowy-ebook.html">Ebook</a>
+                    </div>
+                </li>
+                <li><a href="pages/kontakt.html">Kontakt</a></li>
+                <li><a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button" style="margin-left: 1rem;">Rezerwacja online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Zakątek Piękna – Luksusowy Gabinet Kosmetyczny</h1>
+            <p>Nowoczesne technologie, sprawdzone terapie i indywidualne podejście – odkryj piękno na nowo.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button">Umów wizytę online</a>
+                <a href="pages/oferta/index.html" class="cta-button" style="background: transparent; border: 2px solid #E0D0CD;">Poznaj ofertę</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja O nas -->
+    <section class="section bg-light">
+        <div class="section-container">
+            <div class="grid grid-2">
+                <div>
+                    <h2>O nas</h2>
+                    <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Zakątek Piękna to salon stworzony z pasji do kosmetologii i zdrowej pielęgnacji. Oferujemy terapie skóry, depilację laserową, modelowanie sylwetki i rytuały relaksacyjne.
+                    </p>
+                    <a href="pages/o-nas/index.html" class="cta-button">Dowiedz się więcej o nas</a>
+                </div>
+                
+                <div class="text-center">
+                    <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.3rem; max-width: 500px; margin: 0 auto; border: 2px solid rgba(224, 208, 205, 0.2);">
+                        <div style="text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">◆</div>
+                            <div>Luksusowe Wnętrza</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Elegancja i Komfort</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Oferta -->
+    <section class="section bg-white">
+        <div class="section-container">
+            <h2>Nasza Oferta</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
+                Kompleksowe usługi kosmetyczne i medycyna estetyczna na najwyższym poziomie
+            </p>
+            <div class="grid grid-3">
+                <div class="card">
+                        <h3>Zabiegi na twarz</h3>
+                    <p>Profesjonalne zabiegi odmładzające, oczyszczające i regenerujące dla Twojej twarzy.</p>
+                    <a href="pages/oferta/popularne-zabiegi.html" class="cta-button">Zobacz więcej</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Depilacja laserowa</h3>
+                    <p>Nowoczesna depilacja laserowa - trwałe pozbycie się niechcianych włosów.</p>
+                    <a href="pages/oferta/zabiegi-laserowe.html" class="cta-button">Zobacz więcej</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Modelowanie sylwetki</h3>
+                    <p>Zabiegi wyszczuplające i ujędrniające dla Twojej wymarzonej figury.</p>
+                    <a href="pages/oferta/modelujace-sylwetke.html" class="cta-button">Zobacz więcej</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Masaże i relaks</h3>
+                    <p>Relaksujące masaże terapeutyczne i odnowa biologiczna w luksusowej atmosferze.</p>
+                    <a href="pages/oferta/pielegnacyjne.html" class="cta-button">Zobacz więcej</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Paznokcie, brwi i rzęsy</h3>
+                    <p>Stylizacja paznokci, regulacja brwi i przedłużanie rzęs od naszych specjalistek.</p>
+                    <a href="pages/oferta/pielegnacyjne.html" class="cta-button">Zobacz więcej</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Medycyna estetyczna</h3>
+                    <p>Zabiegi z zakresu medycyny estetycznej wykonywane przez wykwalifikowanych specjalistów.</p>
+                    <a href="pages/oferta/medycyna-estetyczna.html" class="cta-button">Zobacz więcej</a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="pages/cennik/index.html" class="cta-button" style="font-size: 1.2rem; padding: 1rem 2rem;">Zobacz pełny cennik</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Galeria -->
+    <section class="section bg-light">
+        <div class="section-container">
+            <h2>Galeria</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
+                Zajrzyj do naszej galerii i zobacz efekty, które mówią same za siebie.
+            </p>
+            <div class="grid grid-3">
+                <div style="position: relative; overflow: hidden; border-radius: 10px; height: 250px; background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center; border: 2px solid rgba(224, 208, 205, 0.2);">
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">◆</div>
+                        <div>Wnętrze salonu</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Elegancka przestrzeń</div>
+                    </div>
+                </div>
+                
+                <div style="position: relative; overflow: hidden; border-radius: 10px; height: 250px; background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center; border: 2px solid rgba(182, 144, 135, 0.2);">
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">◆</div>
+                        <div>Strefa VIP</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Luksus i komfort</div>
+                    </div>
+                </div>
+                
+                <div style="position: relative; overflow: hidden; border-radius: 10px; height: 250px; background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center; border: 2px solid rgba(224, 208, 205, 0.2);">
+                    <div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">◆</div>
+                        <div>Efekty zabiegów</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">Spektakularne rezultaty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="pages/galeria/index.html" class="cta-button">Otwórz galerię</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Zespół -->
+    <section class="section bg-white">
+        <div class="section-container">
+            <h2>Zespół</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
+                Nasz zespół to kosmetolodzy, masażystki i eksperci z pasją – poznaj osoby, które zadbają o Twoje piękno.
+            </p>
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center;">
+                    <div style="position: relative; overflow: hidden; border-radius: 10px; margin-bottom: 1.5rem;">
+                        <img src="assets/images/img/Team/Karolina.jpg" alt="Karolina - Kosmetolog" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #E0D0CD; margin-bottom: 0.5rem;">Karolina</h4>
+                    <p style="color: #B69087; font-size: 0.9rem; margin-bottom: 1rem;">Kosmetolog</p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="position: relative; overflow: hidden; border-radius: 10px; margin-bottom: 1.5rem;">
+                        <img src="assets/images/img/Team/Aleksandra.png" alt="Aleksandra - Kosmetolog" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #E0D0CD; margin-bottom: 0.5rem;">Aleksandra</h4>
+                    <p style="color: #B69087; font-size: 0.9rem; margin-bottom: 1rem;">Kosmetolog</p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="position: relative; overflow: hidden; border-radius: 10px; margin-bottom: 1.5rem;">
+                        <img src="assets/images/img/Team/Sara.jpg" alt="Sara - Brwi i Rzęsy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #E0D0CD; margin-bottom: 0.5rem;">Sara</h4>
+                    <p style="color: #B69087; font-size: 0.9rem; margin-bottom: 1rem;">Brwi & Rzęsy</p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="position: relative; overflow: hidden; border-radius: 10px; margin-bottom: 1.5rem;">
+                        <img src="assets/images/img/Team/Marta.jpg" alt="Marta - Trycholog" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <h4 style="color: #E0D0CD; margin-bottom: 0.5rem;">Marta</h4>
+                    <p style="color: #B69087; font-size: 0.9rem; margin-bottom: 1rem;">Trycholog</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="pages/zespol/index.html" class="cta-button">Poznaj nasz zespół</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Strefa Wiedzy -->
+    <section class="section bg-light">
+        <div class="section-container">
+            <h2>Strefa Wiedzy</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
+                Porady ekspertów, domowe rytuały i darmowe materiały edukacyjne
+            </p>
+            <div class="grid grid-3">
+                <div class="card" style="text-align: center; background: linear-gradient(135deg, rgba(224, 208, 205, 0.2) 0%, rgba(182, 144, 135, 0.2) 100%); border: 2px solid rgba(224, 208, 205, 0.3);">
+                    <h3>Blog</h3>
+                    <p>Praktyczne porady kosmetologiczne</p>
+                    <a href="pages/strefa-wiedzy/blog.html" class="cta-button">Czytaj blog</a>
+                </div>
+                
+                <div class="card" style="text-align: center; background: linear-gradient(135deg, rgba(182, 144, 135, 0.2) 0%, rgba(224, 208, 205, 0.2) 100%); border: 2px solid rgba(182, 144, 135, 0.3);">
+                    <h3>Domowe SPA</h3>
+                    <p>Domowe rytuały pielęgnacyjne</p>
+                    <a href="pages/strefa-wiedzy/domowe-spa.html" class="cta-button">Odkryj rytuały</a>
+                </div>
+                
+                <div class="card" style="text-align: center; background: linear-gradient(135deg, rgba(224, 208, 205, 0.2) 0%, rgba(182, 144, 135, 0.2) 100%); border: 2px solid rgba(224, 208, 205, 0.3);">
+                    <h3>Darmowy Ebook</h3>
+                    <p>Pobierz darmowy ebook</p>
+                    <a href="pages/strefa-wiedzy/darmowy-ebook.html" class="cta-button">Pobierz ebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Opinie (preserved from original) -->
+    <section class="section bg-white">
+        <div class="section-container">
+            <h2>Opinie Naszych Wymagających Klientów</h2>
+            <div class="grid grid-3">
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(26, 26, 26, 0.9) 100%); border: 1px solid rgba(224, 208, 205, 0.3);">
+                    <p style="font-style: italic; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.8;">"Zakątek Piękna to miejsce, gdzie czuję się jak w luksusowym spa. Profesjonalizm na najwyższym poziomie, a efekty zabiegu Red Touch są spektakularne. To inwestycja w siebie, która się opłaca."</p>
+                    <div style="font-weight: 300; color: #E0D0CD; font-family: 'Playfair Display', serif;">Anna Kowalska</div>
+                    <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">Stały klient od 2 lat</div>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(26, 26, 26, 0.9) 100%); border: 1px solid rgba(224, 208, 205, 0.3);">
+                    <p style="font-style: italic; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.8;">"Po zabiegu Morpheus8 moja skóra wygląda o dekadę młodziej. Atmosfera salonu, wykwalifikowany personel i najnowocześniejszy sprzęt. Polecam każdemu, kto ceni jakość."</p>
+                    <div style="font-weight: 300; color: #E0D0CD; font-family: 'Playfair Display', serif;">Magdalena Pietrzak</div>
+                    <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">VIP Client</div>
+                </div>
+                
+                <div class="card" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(26, 26, 26, 0.9) 100%); border: 1px solid rgba(224, 208, 205, 0.3);">
+                    <p style="font-style: italic; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.8;">"Najwyższa klasa obsługi w Dębicy. Eleganckie wnętrza, profesjonalne podejście i rezultaty, które przechodzą najśmielsze oczekiwania. To miejsce stworzone dla kobiet, które wiedzą czego chcą."</p>
+                    <div style="font-weight: 300; color: #E0D0CD; font-family: 'Playfair Display', serif;">Katarzyna Nowak</div>
+                    <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.6);">Premium Member</div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button">Zobacz wszystkie opinie na Booksy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Rezerwacja wizyty -->
+    <section class="section bg-light">
+        <div class="section-container text-center">
+            <h2>Rezerwacja wizyty</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.9);">
+                Zarezerwuj swoją wizytę online w kilka chwil.
+            </p>
+            <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.2) 0%, rgba(182, 144, 135, 0.2) 100%); border: 2px solid rgba(224, 208, 205, 0.3); padding: 3rem; border-radius: 10px; max-width: 600px; margin: 0 auto;">
+                <h3 style="color: #E0D0CD; margin-bottom: 2rem;">Dlaczego warto wybrać Zakątek Piękna?</h3>
+                <div style="display: flex; justify-content: space-around; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                    <div style="text-align: center;">
+                        <div style="color: #B69087; font-size: 2rem; margin-bottom: 0.5rem;">★</div>
+                        <div style="font-size: 0.9rem;">95% zadowolonych klientów</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="color: #B69087; font-size: 2rem; margin-bottom: 0.5rem;">◆</div>
+                        <div style="font-size: 0.9rem;">Najnowocześniejszy sprzęt</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="color: #B69087; font-size: 2rem; margin-bottom: 0.5rem;">♦</div>
+                        <div style="font-size: 0.9rem;">Doświadczony zespół</div>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button" style="font-size: 1.3rem; padding: 1.2rem 2.5rem;">Umów się teraz</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-info">
+                <h2>Odwiedź Nas</h2>
+                <p><strong>Adres</strong><br>Cmentarna 52c, 39-200 Dębica, Polska</p>
+                <p><strong>Rezerwacje</strong><br>+48 792 809 983</p>
+                <p><strong>Email</strong><br>recepcja.zakatekpiekna@gmail.com</p>
+                <p><strong>Rezerwacje Online</strong><br><a href="javascript:void(0)" onclick="redirectToBooksy()" style="color: #E0D0CD; text-decoration: underline; font-style: italic;">Booksy Premium</a></p>
+                <p><strong>Godziny Otwarcia</strong></p>
+                <p>Poniedziałek - Piątek: 8:00 - 20:00<br>
+                Sobota: 9:00 - 16:00<br>
+                Niedziela: zamknięte</p>
+                <p><strong>Parking VIP</strong><br>Bezpłatny parking dla naszych klientów</p>
+                <p><strong>Lokalizacja</strong><br>Centrum Dębicy - prestiżowa dzielnica</p>
+            </div>
+            <div class="map-embed">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.5!2d21.4126!3d50.0516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d!2sCmentarna+52c%2C+39-200+D%C4%99bica!5e0!3m2!1spl!2spl!4v1699000000000!5m2!1spl!2spl"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Zakątek Piękna. Wszystkie prawa zastrzeżone. | Cmentarna 52c, 39-200 Dębica | Tel: +48 792 809 983</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Luksusowy gabinet kosmetyczny - Where Beauty Meets Excellence</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

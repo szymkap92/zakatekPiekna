@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Zakątek Piękna | Luksusowy Gabinet Kosmetyczny</title>
+    <meta name="description" content="Skontaktuj się z Zakątek Piękna - ekskluzywnym gabinetem kosmetycznym w Dębicy. Umów wizytę online przez Booksy lub zadzwoń: +48 792 809 983">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.9) 0%, 
+                rgba(26, 26, 26, 0.8) 50%, 
+                rgba(0, 0, 0, 0.9) 100%);
+            padding: 180px 2rem 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(182, 144, 135, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 30%, rgba(224, 208, 205, 0.1) 0%, transparent 50%);
+            animation: luxuryGlow 6s ease-in-out infinite;
+        }
+        
+        .contact-form-section {
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.8) 0%, 
+                rgba(26, 26, 26, 0.9) 100%);
+            padding: 120px 2rem;
+        }
+        
+        .contact-form {
+            background: linear-gradient(135deg, 
+                rgba(26, 26, 26, 0.9) 0%, 
+                rgba(0, 0, 0, 0.8) 100%);
+            border: 1px solid rgba(224, 208, 205, 0.3);
+            padding: 3rem;
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-form:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                rgba(182, 144, 135, 0.05) 0%, 
+                transparent 50%, 
+                rgba(224, 208, 205, 0.05) 100%);
+            pointer-events: none;
+        }
+        
+        .contact-form h2 {
+            color: #E0D0CD;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .form-group label {
+            display: block;
+            color: #E0D0CD;
+            font-weight: 300;
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1.2rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(224, 208, 205, 0.3);
+            color: #ffffff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #B69087;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(182, 144, 135, 0.2);
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(45deg, #B69087, #E0D0CD);
+            color: #000;
+            padding: 1.5rem 3rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .submit-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.3), 
+                transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(182, 144, 135, 0.3);
+            background: linear-gradient(45deg, #E0D0CD, #B69087);
+        }
+        
+        .submit-btn:hover:before {
+            left: 100%;
+        }
+        
+        .contact-info-card {
+            background: linear-gradient(135deg, 
+                rgba(26, 26, 26, 0.9) 0%, 
+                rgba(0, 0, 0, 0.8) 100%);
+            border: 1px solid rgba(224, 208, 205, 0.3);
+            padding: 3rem;
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            border-color: rgba(224, 208, 205, 0.4);
+        }
+        
+        .contact-info-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                rgba(182, 144, 135, 0.05) 0%, 
+                transparent 50%, 
+                rgba(224, 208, 205, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .contact-info-card:hover:before {
+            opacity: 1;
+        }
+        
+        .contact-item {
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-item h3 {
+            color: #E0D0CD;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .contact-item p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .contact-item a {
+            color: #E0D0CD;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-style: italic;
+        }
+        
+        .contact-item a:hover {
+            color: #B69087;
+        }
+        
+        .booking-section {
+            background: linear-gradient(135deg, 
+                rgba(26, 26, 26, 0.8) 0%, 
+                rgba(0, 0, 0, 0.9) 100%);
+            padding: 120px 2rem;
+        }
+        
+        .booking-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .booking-card {
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.9) 0%, 
+                rgba(26, 26, 26, 0.8) 100%);
+            border: 2px solid rgba(224, 208, 205, 0.3);
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .booking-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            border-color: rgba(224, 208, 205, 0.5);
+            box-shadow: 0 40px 80px rgba(182, 144, 135, 0.2);
+        }
+        
+        .booking-card img {
+            width: 120px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .booking-card:hover img {
+            opacity: 1;
+            filter: brightness(1) invert(0);
+        }
+        
+        .logo-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+        
+        .logo-container {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(224, 208, 205, 0.3);
+            padding: 2rem;
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.8) 0%, 
+                rgba(26, 26, 26, 0.9) 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .logo-container:hover {
+            border-color: rgba(224, 208, 205, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(182, 144, 135, 0.2);
+        }
+        
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+            filter: brightness(0.9) contrast(1.1);
+            transition: all 0.3s ease;
+        }
+        
+        .logo-container:hover img {
+            filter: brightness(1.1) contrast(1.2);
+            transform: scale(1.05);
+        }
+        
+        .partners-section {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 80px 2rem;
+        }
+        
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .partner-logo {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, 
+                rgba(26, 26, 26, 0.7) 0%, 
+                rgba(0, 0, 0, 0.9) 100%);
+            border: 1px solid rgba(224, 208, 205, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            transform: translateY(-5px);
+            border-color: rgba(224, 208, 205, 0.4);
+        }
+        
+        .partner-logo img {
+            width: 100%;
+            max-width: 120px;
+            height: 60px;
+            object-fit: contain;
+            filter: grayscale(100%) brightness(0.8);
+            transition: filter 0.3s ease;
+        }
+        
+        .partner-logo:hover img {
+            filter: grayscale(0%) brightness(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown-banner">
+        LIMITOWANA PROMOCJA - Zostało tylko: <span id="countdown" class="countdown-timer">3:00:00</span> - EKSKLUZYWNE RABATY
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna Logo">
+                Zakątek Piękna
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="zespol/index.html">Zespół</a></li>
+                <li><a href="o-nas/index.html">O nas</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="return false;">Strefa Wiedzy</a>
+                    <div class="dropdown-content">
+                        <a href="strefa-wiedzy/blog.html">Blog</a>
+                        <a href="strefa-wiedzy/darmowy-ebook.html">Darmowy Ebook</a>
+                        <a href="strefa-wiedzy/domowe-spa.html">Domowe SPA</a>
+                        <a href="cennik/index.html">Cennik</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="promocje/index.html">Promocje</a>
+                    <div class="dropdown-content">
+                        <a href="promocje/red-touch.html">Red Touch</a>
+                        <a href="promocje/dermapen.html">Dermapen</a>
+                        <a href="promocje/morpheus.html">Morpheus8</a>
+                        <a href="promocje/multifrax.html">Multifrax</a>
+                        <a href="promocje/lumecca.html">Lumecca</a>
+                    </div>
+                </li>
+                <li><a href="galeria/index.html">Galeria</a></li>
+                <li class="dropdown">
+                    <a href="oferta/index.html">Oferta</a>
+                    <div class="dropdown-content">
+                        <a href="oferta/popularne-zabiegi.html">Popularne zabiegi</a>
+                        <a href="oferta/konsultacje.html">Konsultacje kosmetologiczne</a>
+                        <a href="oferta/zabiegi-laserowe.html">Zabiegi laserowe</a>
+                        <a href="oferta/modelujace-sylwetke.html">Zabiegi modelujące sylwetkę</a>
+                        <a href="oferta/radiofrekwencja.html">Radiofrekwencja i odmładzanie</a>
+                        <a href="oferta/mezoterapia.html">Mezoterapia i mikronakłuwanie</a>
+                        <a href="oferta/medycyna-estetyczna.html">Medycyna estetyczna</a>
+                        <a href="oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
+                    </div>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>Skontaktuj Się z Nami</h1>
+            <p>Jesteśmy tutaj, aby odpowiedzieć na Twoje pytania i umówić Cię na ekskluzywną konsultację. Odkryj świat luksusowych zabiegów kosmetycznych w sercu Dębicy.</p>
+            <a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button">Umów Wizytę Online</a>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <div class="section-container">
+            <h2>Sposoby Rezerwacji</h2>
+            <div class="booking-cards">
+                <div class="booking-card">
+                    <img src="../assets/images/img/logoBooksy/booksy.png" alt="Booksy - rezerwacje online">
+                    <h3>Rezerwacje Online Booksy</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; line-height: 1.7;">Wygodny system rezerwacji dostępny 24/7. Wybierz preferowany termin, specjalistę i zabieg w kilka kliknięć.</p>
+                    <a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button">Rezerwuj przez Booksy</a>
+                </div>
+                
+                <div class="booking-card">
+                    <div style="width: 120px; height: 60px; margin: 0 auto 2rem; background: linear-gradient(45deg, #E0D0CD, #B69087); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 300; color: #000; font-size: 1.2rem; letter-spacing: 2px;">
+                        TELEFON
+                    </div>
+                    <h3>Rezerwacje Telefoniczne</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; line-height: 1.7;">Bezpośredni kontakt z naszym zespołem. Profesjonalne doradztwo i indywidualne podejście do każdego klienta.</p>
+                    <a href="tel:+48792809983" class="cta-button">Zadzwoń: +48 792 809 983</a>
+                </div>
+                
+                <div class="booking-card">
+                    <div style="width: 120px; height: 60px; margin: 0 auto 2rem; background: linear-gradient(45deg, #B69087, #E0D0CD); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 300; color: #000; font-size: 1.2rem; letter-spacing: 2px;">
+                        EMAIL
+                    </div>
+                    <h3>Kontakt Mailowy</h3>
+                    <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; line-height: 1.7;">Napisz do nas z pytaniami o zabiegi, cennik lub dostępność terminów. Odpowiadamy w ciągu 24 godzin.</p>
+                    <a href="mailto:recepcja.zakatekpiekna@gmail.com" class="cta-button">Wyślij Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="section-container">
+            <div class="grid grid-2">
+                <div class="contact-info-card">
+                    <h2>Informacje Kontaktowe</h2>
+                    
+                    <div class="contact-item">
+                        <h3>Lokalizacja Premium</h3>
+                        <p>Cmentarna 52c<br>39-200 Dębica, Polska</p>
+                        <p style="margin-top: 0.5rem; font-style: italic; opacity: 0.8;">Centrum miasta - prestiżowa dzielnica</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Rezerwacje i Informacje</h3>
+                        <p><a href="tel:+48792809983">+48 792 809 983</a></p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Czynne w godzinach pracy salonu</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Korespondencja Email</h3>
+                        <p><a href="mailto:recepcja.zakatekpiekna@gmail.com">recepcja.zakatekpiekna@gmail.com</a></p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Odpowiedź w ciągu 24h</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Godziny Otwarcia</h3>
+                        <p>Poniedziałek - Piątek: 8:00 - 20:00<br>
+                        Sobota: 9:00 - 16:00<br>
+                        Niedziela: zamknięte</p>
+                        <p style="margin-top: 0.5rem; font-style: italic; opacity: 0.8;">Ostatnie wizyty na godzinę przed zamknięciem</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h3>Udogodnienia VIP</h3>
+                        <p>Bezpłatny parking dla klientów<br>
+                        Klimatyzacja i oczyszczacze powietrza<br>
+                        Strefa relaksu z kawą i herbatą<br>
+                        WiFi Premium</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Formularz Kontaktowy</h2>
+                    <form id="contactForm" onsubmit="return validateForm('contactForm')">
+                        <div class="form-group">
+                            <label for="name">Imię i Nazwisko</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adres Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Interesujący Zabieg</label>
+                            <select id="service" name="service">
+                                <option value="">Wybierz zabieg</option>
+                                <option value="red-touch">Red Touch - Mikroigłowa terapia</option>
+                                <option value="dermapen">Dermapen - Precyzyjna regeneracja</option>
+                                <option value="morpheus">Morpheus8 - Lifting bez skalpela</option>
+                                <option value="multifrax">Multifrax - Laser frakcyjny</option>
+                                <option value="lumecca">Lumecca IPL - Fotoodmładzanie</option>
+                                <option value="konsultacja">Konsultacja ekspercka</option>
+                                <option value="pakiet">Pakiet zabiegów</option>
+                                <option value="inne">Inne</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferred-date">Preferowany Termin</label>
+                            <input type="date" id="preferred-date" name="preferred-date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" placeholder="Opisz swoje oczekiwania, zadaj pytania lub podziel się uwagami..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Wyślij Wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="section-container">
+            <h2>Nasze Eleganckie Wnętrza</h2>
+            <div class="grid grid-2">
+                <div style="text-align: center;">
+                    <div style="position: relative; overflow: hidden;">
+                        <img src="../assets/images/img/kontakt-img/Kontakt.jpg" alt="Salon Zakątek Piękna - wnętrze" style="width: 100%; height: 350px; object-fit: cover; filter: grayscale(30%) contrast(120%); transition: all 0.5s ease;" onmouseover="this.style.filter='grayscale(0%) contrast(130%)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(30%) contrast(120%)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 class="text-primary" style="margin-top: 2rem;">Recepcja Premium</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Ekskluzywna strefa powitalna z atmosferą luksusu i elegancji</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="position: relative; overflow: hidden;">
+                        <img src="../assets/images/img/kontakt-img/Kontakt2.jpg" alt="Salon Zakątek Piękna - gabinet" style="width: 100%; height: 350px; object-fit: cover; filter: grayscale(30%) contrast(120%); transition: all 0.5s ease;" onmouseover="this.style.filter='grayscale(0%) contrast(130%)'; this.style.transform='scale(1.05)'" onmouseout="this.style.filter='grayscale(30%) contrast(120%)'; this.style.transform='scale(1)'">
+                    </div>
+                    <h3 class="text-primary" style="margin-top: 2rem;">Gabinet Zabiegowy</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Nowoczesne wyposażenie medyczne w eleganckim otoczeniu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="logo-section">
+        <div class="section-container text-center">
+            <h2>Zakątek Piękna</h2>
+            <div class="logo-container">
+                <img src="../assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna - Logo">
+            </div>
+            <p style="margin-top: 2rem; color: rgba(255, 255, 255, 0.8); font-style: italic; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                Luksusowy gabinet kosmetyczny, gdzie tradycyjna elegancja spotyka się z najnowocześniejszymi technologiami medycyny estetycznej. Odkryj swoje piękno w atmosferze wyjątkowej klasy i profesjonalizmu.
+            </p>
+        </div>
+    </div>
+
+    <section class="partners-section">
+        <div class="section-container">
+            <h2>Nasi Partnerzy Premium</h2>
+            <p style="text-align: center; color: rgba(255, 255, 255, 0.8); margin-bottom: 3rem; font-size: 1.1rem;">Współpracujemy wyłącznie z najlepszymi markami w branży kosmetycznej</p>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="../assets/images/img/firmy/Derma.png" alt="Derma - partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="../assets/images/img/firmy/Osmosis.png" alt="Osmosis - partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="../assets/images/img/firmy/arkana.png" alt="Arkana - partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="../assets/images/img/firmy/estGen.png" alt="EstGen - partner">
+                </div>
+                <div class="partner-logo">
+                    <img src="../assets/images/img/firmy/lira.png" alt="Lira - partner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <div class="map-info">
+                <h2>Znajdź Nas</h2>
+                <p><strong>Adres Salonu</strong><br>Cmentarna 52c, 39-200 Dębica, Polska</p>
+                <p><strong>Dojazd</strong><br>Centrum miasta, łatwy dostęp komunikacją miejską i samochodem</p>
+                <p><strong>Parking</strong><br>Bezpłatne miejsca parkingowe bezpośrednio przy salonie</p>
+                <p><strong>Transport Publiczny</strong><br>Przystanek autobusowy 100m od salonu</p>
+                <p><strong>Punkty Orientacyjne</strong><br>W pobliżu Rynku Głównego i centrum handlowego</p>
+                <p style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(224, 208, 205, 0.3);">
+                    <strong>Wskazówki Dojazdu</strong><br>
+                    Salon znajduje się w prestiżowej części centrum Dębicy. Budynek oznaczony tablicą "Zakątek Piękna". Wejście główne od strony ulicy Cmentarnej.
+                </p>
+            </div>
+            <div class="map-embed">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.5!2d21.4126!3d50.0516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d!2sCmentarna+52c%2C+39-200+D%C4%99bica!5e0!3m2!1spl!2spl!4v1699000000000!5m2!1spl!2spl"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Zakątek Piękna. Wszystkie prawa zastrzeżone. | Cmentarna 52c, 39-200 Dębica | Tel: +48 792 809 983</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Luksusowy gabinet kosmetyczny - Where Beauty Meets Excellence</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Enhanced form validation for contact page
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm('contactForm')) {
+                // Show elegant success message
+                const overlay = document.createElement('div');
+                overlay.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(26,26,26,0.9));
+                    z-index: 10000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #E0D0CD;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                `;
+                
+                overlay.innerHTML = `
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">Dziękujemy za kontakt</h3>
+                        <p style="font-size: 1rem; opacity: 0.8;">Odpowiemy w ciągu 24 godzin</p>
+                    </div>
+                `;
+                
+                document.body.appendChild(overlay);
+                setTimeout(() => overlay.style.opacity = '1', 10);
+                setTimeout(() => overlay.remove(), 3000);
+                
+                // Reset form
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>

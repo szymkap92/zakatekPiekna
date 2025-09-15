@@ -1,0 +1,55 @@
+Struktura podstrony: Darmowy Ebook
+Nagłówek
+
+Tytuł: Darmowy ebook – „Domowa pielęgnacja. Sekrety troski o urodę”
+
+Opis wstępny:
+„Przygotowaliśmy dla Ciebie wyjątkowy przewodnik po świecie domowej pielęgnacji ✨ Pełen sprawdzonych receptur, prostych rytuałów i praktycznych wskazówek, które pomogą Ci zadbać o siebie w zaciszu własnego domu. To idealne uzupełnienie wizyt w Zakątku Piękna.”
+
+Sekcja prezentacyjna (obrazek + opis)
+
+Obrazek okładki e-booka (po prawej stronie).
+
+Tekst obok:
+„Dowiesz się m.in.:
+✅ Jak tworzyć naturalne maseczki i peelingi
+✅ Jak wykonać relaksujący masaż twarzy w domu
+✅ Jak zadbać o skórę w zależności od pory roku
+✅ Jakie rytuały domowe uzupełnią profesjonalne zabiegi w salonie”
+
+Call to Action (pobranie)
+
+Nagłówek: Pobierz darmowy ebook już teraz!
+
+Formularz:
+
+Imię
+
+Adres e-mail
+
+Checkbox zgody marketingowej (RODO)
+
+Przycisk: 📩 Pobierz ebook
+
+(po kliknięciu użytkownik dostaje plik PDF na maila albo bezpośrednio do pobrania)
+
+Sekcja zachęcająca
+
+Cytat / hasło:
+„To więcej niż ebook – to codzienna dawka inspiracji do pielęgnacji, która naprawdę działa.”
+
+Krótki akcent graficzny (np. ikona kwiatu / SPA).
+
+Stopka sekcji
+
+Link powrotny: ← Wróć do Strefy Wiedzy
+
+Pod CTA można dać jeszcze button: Sprawdź nasze zabiegi w salonie
+
+👉 Teraz masz 3 gotowe podstrony w Strefie Wiedzy:
+
+Blog (porady i artykuły)
+
+Domowe SPA (przepisy i rytuały do samodzielnego wykonania)
+
+Darmowy Ebook (landing page z możliwością pobrania)

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Zakątek Piękna | Wiedza o urodzie i pielęgnacji</title>
+    <meta name="description" content="Blog Zakątek Piękna - porady ekspertów, artykuły edukacyjne o pielęgnacji skóry, zabiegach kosmetycznych i zdrowym stylu życia. Najnowsze trendy w kosmetologii.">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="countdown-banner">
+        LIMITOWANA PROMOCJA - Zostało tylko: <span id="countdown" class="countdown-timer">3:00:00</span> - EKSKLUZYWNE RABATY
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../../assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna Logo">
+                Zakątek Piękna
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Start</a></li>
+                <li><a href="../zespol/index.html">Zespół</a></li>
+                <li><a href="../o-nas/index.html">O nas</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="return false;">Strefa Wiedzy</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="darmowy-ebook.html">Darmowy Ebook</a>
+                        <a href="domowe-spa.html">Domowe SPA</a>
+                        <a href="../cennik/index.html">Cennik</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../promocje/index.html">Promocje</a>
+                    <div class="dropdown-content">
+                        <a href="../promocje/red-touch.html">Red Touch</a>
+                        <a href="../promocje/dermapen.html">Dermapen</a>
+                        <a href="../promocje/morpheus.html">Morpheus8</a>
+                        <a href="../promocje/multifrax.html">Multifrax</a>
+                        <a href="../promocje/lumecca.html">Lumecca</a>
+                    </div>
+                </li>
+                <li><a href="../galeria/index.html">Galeria</a></li>
+                <li class="dropdown">
+                    <a href="../oferta/index.html">Oferta</a>
+                    <div class="dropdown-content">
+                        <a href="../oferta/popularne-zabiegi.html">Popularne zabiegi</a>
+                        <a href="../oferta/konsultacje.html">Konsultacje kosmetologiczne</a>
+                        <a href="../oferta/zabiegi-laserowe.html">Zabiegi laserowe</a>
+                        <a href="../oferta/modelujace-sylwetke.html">Zabiegi modelujące sylwetkę</a>
+                        <a href="../oferta/radiofrekwencja.html">Radiofrekwencja i odmładzanie</a>
+                        <a href="../oferta/mezoterapia.html">Mezoterapia i mikronakłuwanie</a>
+                        <a href="../oferta/medycyna-estetyczna.html">Medycyna estetyczna</a>
+                        <a href="../oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
+                    </div>
+                </li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Blog – Twoja porcja wiedzy o urodzie, pielęgnacji i zdrowym stylu życia</h1>
+            <p>Witaj w naszej strefie wiedzy! Tutaj znajdziesz porady ekspertów, artykuły edukacyjne i inspiracje, które pomogą Ci świadomie dbać o piękno i zdrowie swojej skóry. Sprawdź najnowsze wpisy i odkryj sekrety skutecznej pielęgnacji.</p>
+        </div>
+    </section>
+
+    <!-- Wyszukiwarka i filtry -->
+    <section class="section bg-light">
+        <div class="section-container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.1) 0%, rgba(182, 144, 135, 0.1) 100%); padding: 2rem; border-radius: 10px; border: 1px solid rgba(224, 208, 205, 0.2);">
+                    <div style="margin-bottom: 2rem;">
+                        <input type="text" placeholder="Wyszukaj artykuł..." style="width: 100%; padding: 1rem; border: 1px solid rgba(224, 208, 205, 0.3); border-radius: 5px; background: rgba(0, 0, 0, 0.7); color: white; font-size: 1rem;">
+                    </div>
+                    
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                        <button class="cta-button" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Wszystkie</button>
+                        <button style="padding: 0.5rem 1rem; font-size: 0.9rem; background: transparent; border: 1px solid rgba(224, 208, 205, 0.3); color: rgba(255, 255, 255, 0.8); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(224, 208, 205, 0.2)'" onmouseout="this.style.background='transparent'">Pielęgnacja twarzy</button>
+                        <button style="padding: 0.5rem 1rem; font-size: 0.9rem; background: transparent; border: 1px solid rgba(224, 208, 205, 0.3); color: rgba(255, 255, 255, 0.8); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(224, 208, 205, 0.2)'" onmouseout="this.style.background='transparent'">Zabiegi na ciało</button>
+                        <button style="padding: 0.5rem 1rem; font-size: 0.9rem; background: transparent; border: 1px solid rgba(224, 208, 205, 0.3); color: rgba(255, 255, 255, 0.8); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(224, 208, 205, 0.2)'" onmouseout="this.style.background='transparent'">Porady kosmetologów</button>
+                        <button style="padding: 0.5rem 1rem; font-size: 0.9rem; background: transparent; border: 1px solid rgba(224, 208, 205, 0.3); color: rgba(255, 255, 255, 0.8); cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(224, 208, 205, 0.2)'" onmouseout="this.style.background='transparent'">Nowości i trendy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista wpisów -->
+    <section class="section bg-white">
+        <div class="section-container">
+            <h2>Najnowsze artykuły</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 200px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center;">
+                        Zdjęcie artykułu - Coming Soon
+                    </div>
+                    <h3>Zabiegi na cellulit – skuteczne rozwiązania dostępne w Zakątku Piękna</h3>
+                    <p>Poznaj najnowsze metody redukcji cellulitu, które naprawdę działają. Dowiedz się, które zabiegi są najbardziej skuteczne.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Zespół Zakątku Piękna | 27 sierpnia 2025</span>
+                    </div>
+                    <a href="zabiegi-na-cellulit.html" class="cta-button">Czytaj więcej</a>
+                </div>
+
+                <div class="card">
+                    <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 200px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center;">
+                        Zdjęcie artykułu - Coming Soon
+                    </div>
+                    <h3>Laser frakcyjny – regeneracja skóry i redukcja zmarszczek</h3>
+                    <p>Dowiedz się, jak działa laser frakcyjny i dla kogo będzie najlepszym wyborem. Poznaj zalety tej nowoczesnej technologii.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Karolina, kosmetolog | 13 lipca 2025</span>
+                    </div>
+                    <a href="laser-frakcyjny.html" class="cta-button">Czytaj więcej</a>
+                </div>
+
+                <div class="card">
+                    <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 200px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center;">
+                        Zdjęcie artykułu - Coming Soon
+                    </div>
+                    <h3>Radiofrekwencja mikroigłowa – rewolucja w odmładzaniu skóry</h3>
+                    <p>Dlaczego RF frakcyjny jest numerem 1 w nowoczesnej kosmetologii? Poznaj tajniki tego zabiegu.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Katarzyna, SEO kosmetolog | 12 lipca 2025</span>
+                    </div>
+                    <a href="radiofrekwencja-mikroiglowa.html" class="cta-button">Czytaj więcej</a>
+                </div>
+
+                <div class="card">
+                    <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 200px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center;">
+                        Zdjęcie artykułu - Coming Soon
+                    </div>
+                    <h3>Pielęgnacja skóry w domu – porady ekspertów</h3>
+                    <p>Jak skutecznie pielęgnować skórę między wizytami w salonie? Poznaj najlepsze rutyny domowe.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Aleksandra, kosmetolog | 5 lipca 2025</span>
+                    </div>
+                    <a href="#" class="cta-button">Czytaj więcej</a>
+                </div>
+
+                <div class="card">
+                    <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 200px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center;">
+                        Zdjęcie artykułu - Coming Soon
+                    </div>
+                    <h3>Trendy w kosmetologii 2025 – co warto wiedzieć</h3>
+                    <p>Najnowsze trendy w świecie beauty i kosmetologii. Dowiedz się, co będzie popularne w nadchodzących miesiącach.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Natalia, kosmetolog | 1 lipca 2025</span>
+                    </div>
+                    <a href="#" class="cta-button">Czytaj więcej</a>
+                </div>
+
+                <div class="card">
+                    <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 200px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.2rem; text-align: center;">
+                        Zdjęcie artykułu - Coming Soon
+                    </div>
+                    <h3>Przygotowanie do zabiegu – co warto wiedzieć</h3>
+                    <p>Jak przygotować się do wizyty w salonie kosmetycznym? Poznaj najważniejsze zasady przed zabiegiem.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Marta, trycholog | 28 czerwca 2025</span>
+                    </div>
+                    <a href="#" class="cta-button">Czytaj więcej</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Polecane artykuły -->
+    <section class="section bg-light">
+        <div class="section-container">
+            <h2>Polecamy do przeczytania</h2>
+            <div class="grid grid-2">
+                <div class="card" style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.2) 0%, rgba(182, 144, 135, 0.2) 100%); border: 2px solid rgba(224, 208, 205, 0.3);">
+                    <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.4) 0%, rgba(182, 144, 135, 0.4) 100%); height: 250px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.3rem; text-align: center;">
+                        Polecany artykuł - Coming Soon
+                    </div>
+                    <h3>Red Touch – przełom w odmładzaniu skóry</h3>
+                    <p>Poznaj rewolucyjną technologię laserową, która zapewnia spektakularne efekty odmładzania bez przestojów w codziennym funkcjonowaniu.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Zespół Zakątku Piękna | Featured</span>
+                    </div>
+                    <a href="../promocje/red-touch.html" class="cta-button">Sprawdź promocję</a>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.2) 0%, rgba(224, 208, 205, 0.2) 100%); border: 2px solid rgba(182, 144, 135, 0.3);">
+                    <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.4) 0%, rgba(224, 208, 205, 0.4) 100%); height: 250px; border-radius: 10px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.3rem; text-align: center;">
+                        Polecany artykuł - Coming Soon
+                    </div>
+                    <h3>Morpheus 8 – lifting bez skalpela</h3>
+                    <p>Dowiedz się więcej o najnowocześniejszej technologii RF mikroigłowej, która łączy radiofrekwencję z precyzyjnym mikronakłuwaniem.</p>
+                    <div style="margin: 1rem 0; font-size: 0.9rem; color: rgba(255, 255, 255, 0.7);">
+                        <span>Zespół Zakątku Piękna | Featured</span>
+                    </div>
+                    <a href="../promocje/morpheus.html" class="cta-button">Sprawdź promocję</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section bg-white">
+        <div class="section-container text-center">
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <h2 style="color: #E0D0CD; font-size: 2.5rem; margin-bottom: 2rem;">Masz pytania?</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9);">Zostaw komentarz pod artykułem lub skontaktuj się z nami – nasi eksperci pomogą Ci dobrać idealne zabiegi!</p>
+                <a href="../oferta/konsultacje.html" class="cta-button">Umów konsultację kosmetologiczną</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka sekcji -->
+    <section class="section bg-light">
+        <div class="section-container text-center">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <h3 style="color: #E0D0CD; font-size: 2rem; margin-bottom: 1rem;">Świadoma pielęgnacja to inwestycja w piękno na lata</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Zakątek Piękna. Wszystkie prawa zastrzeżone. | Cmentarna 52c, 39-200 Dębica | Tel: +48 792 809 983</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Luksusowy gabinet kosmetyczny - Where Beauty Meets Excellence</p>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

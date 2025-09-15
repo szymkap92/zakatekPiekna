@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domowe SPA - Zakątek Piękna | Naturalne rytuały pielęgnacyjne</title>
+    <meta name="description" content="Domowe SPA - naturalne sposoby pielęgnacji, przepisy na maseczki, peelingi i rytuały relaksacyjne. Odkryj proste sposoby na piękno w domowym zaciszu.">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="countdown-banner">
+        LIMITOWANA PROMOCJA - Zostało tylko: <span id="countdown" class="countdown-timer">3:00:00</span> - EKSKLUZYWNE RABATY
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../../assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna Logo">
+                Zakątek Piękna
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Start</a></li>
+                <li><a href="../zespol/index.html">Zespół</a></li>
+                <li><a href="../o-nas/index.html">O nas</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="return false;">Strefa Wiedzy</a>
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="darmowy-ebook.html">Darmowy Ebook</a>
+                        <a href="domowe-spa.html">Domowe SPA</a>
+                        <a href="../cennik/index.html">Cennik</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="../promocje/index.html">Promocje</a>
+                    <div class="dropdown-content">
+                        <a href="../promocje/red-touch.html">Red Touch</a>
+                        <a href="../promocje/dermapen.html">Dermapen</a>
+                        <a href="../promocje/morpheus.html">Morpheus8</a>
+                        <a href="../promocje/multifrax.html">Multifrax</a>
+                        <a href="../promocje/lumecca.html">Lumecca</a>
+                    </div>
+                </li>
+                <li><a href="../galeria/index.html">Galeria</a></li>
+                <li class="dropdown">
+                    <a href="../oferta/index.html">Oferta</a>
+                    <div class="dropdown-content">
+                        <a href="../oferta/popularne-zabiegi.html">Popularne zabiegi</a>
+                        <a href="../oferta/konsultacje.html">Konsultacje kosmetologiczne</a>
+                        <a href="../oferta/zabiegi-laserowe.html">Zabiegi laserowe</a>
+                        <a href="../oferta/modelujace-sylwetke.html">Zabiegi modelujące sylwetkę</a>
+                        <a href="../oferta/radiofrekwencja.html">Radiofrekwencja i odmładzanie</a>
+                        <a href="../oferta/mezoterapia.html">Mezoterapia i mikronakłuwanie</a>
+                        <a href="../oferta/medycyna-estetyczna.html">Medycyna estetyczna</a>
+                        <a href="../oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
+                    </div>
+                </li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Domowe SPA – Twoje rytuały pielęgnacyjne na każdy dzień</h1>
+            <p>Odkryj naturalne sposoby pielęgnacji, które pozwolą Ci odzyskać równowagę, zrelaksować się i zadbać o swoje piękno w domowym zaciszu. Proste, skuteczne i przyjemne rytuały, które z łatwością wprowadzisz do codziennej pielęgnacji.</p>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="section-container">
+            <div style="display: grid; grid-template-columns: 300px 1fr; gap: 3rem;">
+                <!-- Filtry -->
+                <div>
+                    <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.1) 0%, rgba(182, 144, 135, 0.1) 100%); padding: 2rem; border-radius: 10px; border: 1px solid rgba(224, 208, 205, 0.2); position: sticky; top: 2rem;">
+                        <h3 style="color: #E0D0CD; margin-bottom: 2rem;">Filtry</h3>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: #E0D0CD; font-size: 1rem; margin-bottom: 1rem;">Rodzaj:</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox" checked>
+                                    <span>Na naturalnych składnikach</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Porady pielęgnacyjne</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: #E0D0CD; font-size: 1rem; margin-bottom: 1rem;">Wskazania:</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Pielęgnacja</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Nawilżenie</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Oczyszczanie</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Regeneracja</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Naturalny peeling</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Rozjaśnienie</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Wygładzenie</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Relaks</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: #E0D0CD; font-size: 1rem; margin-bottom: 1rem;">Część ciała:</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Twarz</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Dłonie</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Na ciało</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem;">
+                                    <input type="checkbox">
+                                    <span>Włosy</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button style="width: 100%; padding: 0.8rem; background: transparent; border: 1px solid rgba(224, 208, 205, 0.3); color: rgba(255, 255, 255, 0.8); cursor: pointer; border-radius: 5px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(224, 208, 205, 0.2)'" onmouseout="this.style.background='transparent'">
+                            Wyczyść filtry
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Lista przepisów -->
+                <div>
+                    <h2 style="text-align: left; margin-bottom: 2rem;">Naturalne rytuały i przepisy</h2>
+                    <div class="grid grid-2">
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(182, 144, 135, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">TWARZ</div>
+                                Zdjęcie maseczki - Coming Soon
+                            </div>
+                            <h3>Maseczka z awokado i miodu</h3>
+                            <p>Intensywne odżywienie skóry - naturalne składniki zapewnią Twojej skórze głębokie nawilżenie i regenerację.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(224, 208, 205, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">DŁONIE</div>
+                                Zdjęcie maseczki - Coming Soon
+                            </div>
+                            <h3>Maseczka regenerująca do dłoni</h3>
+                            <p>Z miodem i oliwą - skuteczny sposób na regenerację i nawilżenie skóry dłoni po długim dniu.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(182, 144, 135, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">TWARZ</div>
+                                Zdjęcie masażu - Coming Soon
+                            </div>
+                            <h3>Masaż twarzy olejkiem</h3>
+                            <p>Rytuał wygładzający i relaksujący - prosty sposób na poprawę krążenia i redukcję napięcia.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(224, 208, 205, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">TWARZ</div>
+                                Zdjęcie oczyszczania - Coming Soon
+                            </div>
+                            <h3>Wieczorne oczyszczanie twarzy</h3>
+                            <p>Prosty rytuał dla zdrowej cery - skuteczny sposób na usunięcie zanieczyszczeń z całego dnia.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(182, 144, 135, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">WŁOSY</div>
+                                Zdjęcie maski - Coming Soon
+                            </div>
+                            <h3>Maska z awokado i miodu na włosy</h3>
+                            <p>Nawilżenie i blask włosów - naturalna maska zapewni Twoim włosom zdrowy wygląd i miękkość.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(224, 208, 205, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">NA CIAŁO</div>
+                                Zdjęcie peelingu - Coming Soon
+                            </div>
+                            <h3>Domowy peeling z kawy</h3>
+                            <p>Z olejem kokosowym - naturalny sposób na wygładzenie skóry i poprawę jej tekstury.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.3) 0%, rgba(182, 144, 135, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(182, 144, 135, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">TWARZ</div>
+                                Zdjęcie maseczki - Coming Soon
+                            </div>
+                            <h3>Maseczka jogurtowo-miodowa</h3>
+                            <p>Na promienną cerę - delikatna maseczka zapewni skórze naturalny blask i świeżość.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+
+                        <div class="card">
+                            <div style="background: linear-gradient(135deg, rgba(182, 144, 135, 0.3) 0%, rgba(224, 208, 205, 0.3) 100%); height: 150px; border-radius: 10px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; color: #E0D0CD; font-size: 1.1rem; position: relative;">
+                                <div style="position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(224, 208, 205, 0.8); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.7rem; color: white;">TWARZ</div>
+                                Zdjęcie maseczki - Coming Soon
+                            </div>
+                            <h3>Maseczka z kawy</h3>
+                            <p>Naturalny sposób na wygładzenie skóry - kawa pobudza krążenie i nadaje skórze zdrowy wygląd.</p>
+                            <a href="#" class="cta-button">Zobacz przepis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Porady kosmetologa -->
+    <section class="section bg-white">
+        <div class="section-container">
+            <div style="background: linear-gradient(135deg, rgba(224, 208, 205, 0.2) 0%, rgba(182, 144, 135, 0.2) 100%); border: 2px solid rgba(224, 208, 205, 0.3); padding: 3rem; border-radius: 10px; text-align: center; max-width: 800px; margin: 0 auto;">
+                <h3 style="color: #E0D0CD; margin-bottom: 2rem; font-size: 1.8rem;">Porady kosmetologa</h3>
+                <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 2rem;">
+                    Pamiętaj, że domowe rytuały są świetnym uzupełnieniem profesjonalnych zabiegów w salonie. Chcesz dobrać indywidualny plan pielęgnacji? Skorzystaj z konsultacji kosmetologicznej w Zakątku Piękna.
+                </p>
+                <a href="../oferta/konsultacje.html" class="cta-button">Umów konsultację</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (stopka) -->
+    <section class="section bg-light">
+        <div class="section-container text-center">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <h3 style="color: #E0D0CD; font-size: 2rem; margin-bottom: 1rem; font-style: italic;">Codzienna pielęgnacja to małe rytuały, które budują wielkie efekty</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Zakątek Piękna. Wszystkie prawa zastrzeżone. | Cmentarna 52c, 39-200 Dębica | Tel: +48 792 809 983</p>
+        <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Luksusowy gabinet kosmetyczny - Where Beauty Meets Excellence</p>
+    </footer>
+
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
