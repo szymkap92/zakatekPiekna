@@ -54,58 +54,69 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <img src="assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna Logo">
-                Zakątek Piękna
+            <!-- Left Section - Logo -->
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="assets/images/img/logoBooksy/logo.png" alt="Zakątek Piękna Logo">
+                    Zakątek Piękna
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="pages/o-nas/index.html">O nas</a></li>
-                <li class="dropdown">
-                    <a href="pages/oferta/index.html">Oferta</a>
-                    <div class="dropdown-content">
-                        <a href="pages/oferta/popularne-zabiegi.html">Popularne zabiegi</a>
-                        <a href="pages/oferta/konsultacje.html">Konsultacje kosmetologiczne</a>
-                        <a href="pages/oferta/zabiegi-laserowe.html">Zabiegi laserowe</a>
-                        <a href="pages/oferta/modelujace-sylwetke.html">Zabiegi modelujące sylwetkę</a>
-                        <a href="pages/oferta/radiofrekwencja.html">Radiofrekwencja i odmładzanie</a>
-                        <a href="pages/oferta/mezoterapia.html">Mezoterapia i mikronakłuwanie</a>
-                        <a href="pages/oferta/medycyna-estetyczna.html">Medycyna estetyczna</a>
-                        <a href="pages/oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="pages/promocje/index.html">Promocje</a>
-                    <div class="dropdown-content">
-                        <a href="pages/promocje/red-touch.html">Red Touch</a>
-                        <a href="pages/promocje/dermapen.html">Dermapen</a>
-                        <a href="pages/promocje/morpheus.html">Morpheus8</a>
-                        <a href="pages/promocje/multifrax.html">Multifrax</a>
-                        <a href="pages/promocje/lumecca.html">Lumecca</a>
-                    </div>
-                </li>
-                <li><a href="pages/galeria/index.html">Galeria</a></li>
-                <li><a href="pages/zespol/index.html">Zespół</a></li>
-                <li><a href="pages/cennik/index.html">Cennik</a></li>
-                <li class="dropdown">
-                    <a href="#" onclick="return false;">Strefa wiedzy</a>
-                    <div class="dropdown-content">
-                        <a href="pages/strefa-wiedzy/blog.html">Blog</a>
-                        <a href="pages/strefa-wiedzy/domowe-spa.html">Domowe SPA</a>
-                        <a href="pages/strefa-wiedzy/darmowy-ebook.html">Ebook</a>
-                    </div>
-                </li>
-                <li><a href="pages/kontakt.html">Kontakt</a></li>
-                <li><a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button" style="margin-left: 1rem;">Rezerwacja online</a></li>
-                <li class="social-icons">
+            
+            <!-- Center Section - Navigation Links -->
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="pages/o-nas/index.html">O nas</a></li>
+                    <li class="dropdown">
+                        <a href="pages/oferta/index.html" class="dropdown-toggle" aria-expanded="false" aria-controls="oferta-menu">Oferta</a>
+                        <div class="dropdown-content" id="oferta-menu" role="menu">
+                            <a href="pages/oferta/popularne-zabiegi.html" role="menuitem">Popularne zabiegi</a>
+                            <a href="pages/oferta/konsultacje.html" role="menuitem">Konsultacje kosmetologiczne</a>
+                            <a href="pages/oferta/zabiegi-laserowe.html" role="menuitem">Zabiegi laserowe</a>
+                            <a href="pages/oferta/modelujace-sylwetke.html" role="menuitem">Zabiegi modelujące sylwetkę</a>
+                            <a href="pages/oferta/radiofrekwencja.html" role="menuitem">Radiofrekwencja i odmładzanie</a>
+                            <a href="pages/oferta/mezoterapia.html" role="menuitem">Mezoterapia i mikronakłuwanie</a>
+                            <a href="pages/oferta/medycyna-estetyczna.html" role="menuitem">Medycyna estetyczna</a>
+                            <a href="pages/oferta/pielegnacyjne.html" role="menuitem">Zabiegi pielęgnacyjne</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="pages/promocje/index.html" class="dropdown-toggle" aria-expanded="false" aria-controls="promocje-menu">Promocje</a>
+                        <div class="dropdown-content" id="promocje-menu" role="menu">
+                            <a href="pages/promocje/red-touch.html" role="menuitem">Red Touch</a>
+                            <a href="pages/promocje/dermapen.html" role="menuitem">Dermapen</a>
+                            <a href="pages/promocje/morpheus.html" role="menuitem">Morpheus8</a>
+                            <a href="pages/promocje/multifrax.html" role="menuitem">Multifrax</a>
+                            <a href="pages/promocje/lumecca.html" role="menuitem">Lumecca</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/galeria/index.html">Galeria</a></li>
+                    <li><a href="pages/zespol/index.html">Zespół</a></li>
+                    <li><a href="pages/cennik/index.html">Cennik</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" aria-expanded="false" aria-controls="strefa-menu">Strefa wiedzy</a>
+                        <div class="dropdown-content" id="strefa-menu" role="menu">
+                            <a href="pages/strefa-wiedzy/blog.html" role="menuitem">Blog</a>
+                            <a href="pages/strefa-wiedzy/domowe-spa.html" role="menuitem">Domowe SPA</a>
+                            <a href="pages/strefa-wiedzy/darmowy-ebook.html" role="menuitem">Ebook</a>
+                        </div>
+                    </li>
+                    <li><a href="pages/kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right Section - CTA + Social -->
+            <div class="nav-right">
+                <a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button">Rezerwacja online</a>
+                <div class="social-icons">
                     <a href="#" class="social-icon" title="Instagram" aria-label="Obserwuj nas na Instagram">
                         <svg><use href="#icon-instagram"/></svg>
                     </a>
                     <a href="#" class="social-icon" title="Facebook" aria-label="Obserwuj nas na Facebook">
                         <svg><use href="#icon-facebook"/></svg>
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
             
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>

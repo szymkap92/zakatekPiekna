@@ -1,7 +1,75 @@
 // Elegant Glamorous JavaScript
 
-// Smooth scroll behavior
+// Dropdown menu functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Dropdown menu toggle
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const dropdown = this.closest('.dropdown');
+            const isOpen = dropdown.classList.contains('open');
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown.open').forEach(openDropdown => {
+                if (openDropdown !== dropdown) {
+                    openDropdown.classList.remove('open');
+                    const toggleInside = openDropdown.querySelector('.dropdown-toggle');
+                    if (toggleInside) {
+                        toggleInside.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+            
+            // Toggle current dropdown
+            if (isOpen) {
+                dropdown.classList.remove('open');
+                this.setAttribute('aria-expanded', 'false');
+            } else {
+                dropdown.classList.add('open');
+                this.setAttribute('aria-expanded', 'true');
+            }
+        });
+        
+        // Keyboard support
+        toggle.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown.open').forEach(dropdown => {
+                dropdown.classList.remove('open');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (toggle) {
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+    });
+    
+    // Close dropdowns on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.dropdown.open').forEach(dropdown => {
+                dropdown.classList.remove('open');
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                if (toggle) {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.focus();
+                }
+            });
+        }
+    });
+    
     // Initialize all animations and effects
     initScrollAnimations();
     initParallaxEffects();
@@ -19,8 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lazyLoadImages();
     }
     
-    // Add luxury cursor effect
-    initLuxuryCursor();
+    // Luxury cursor effect removed
     
     // Initialize smooth page transitions
     initPageTransitions();
@@ -170,44 +237,7 @@ function initNavbarEffects() {
     });
 }
 
-// Luxury cursor effect
-function initLuxuryCursor() {
-    const cursor = document.createElement('div');
-    cursor.className = 'luxury-cursor';
-    cursor.style.cssText = `
-        position: fixed;
-        width: 20px;
-        height: 20px;
-        background: radial-gradient(circle, #E0D0CD, #B69087);
-        border-radius: 50%;
-        pointer-events: none;
-        mix-blend-mode: difference;
-        z-index: 9999;
-        transition: transform 0.1s ease;
-        opacity: 0;
-    `;
-    document.body.appendChild(cursor);
-    
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX - 10 + 'px';
-        cursor.style.top = e.clientY - 10 + 'px';
-        cursor.style.opacity = '1';
-    });
-    
-    document.addEventListener('mouseleave', () => {
-        cursor.style.opacity = '0';
-    });
-    
-    // Expand cursor on hover over interactive elements
-    document.querySelectorAll('a, button, .card').forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(2)';
-        });
-        el.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-        });
-    });
-}
+// Luxury cursor effect removed - using default system cursor
 
 // Page transitions
 function initPageTransitions() {
@@ -458,8 +488,5 @@ style.textContent = `
         animation: fadeInUp 0.8s ease-out both;
     }
     
-    .luxury-cursor {
-        transition: all 0.1s ease;
-    }
 `;
 document.head.appendChild(style);

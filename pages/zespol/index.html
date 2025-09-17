@@ -37,11 +37,11 @@
                 <a href="javascript:void(0)" onclick="redirectToBooksy()" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 0.8rem; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.2rem 0.6rem; border: 1px solid rgba(224, 208, 205, 0.3); border-radius: 3px;" onmouseover="this.style.color='#000'; this.style.background='#E0D0CD'; this.style.borderColor='#E0D0CD'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.background='transparent'; this.style.borderColor='rgba(224, 208, 205, 0.3)'" title="Booksy - Rezerwacje Online">
                     Booksy
                 </a>
-                <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Instagram">
-                    IG
+                <a href="#" class="social-icon" title="Instagram" aria-label="Obserwuj nas na Instagram">
+                    <svg><use href="#icon-instagram"/></svg>
                 </a>
-                <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1rem; transition: all 0.3s ease;" onmouseover="this.style.color='#E0D0CD'; this.style.transform='scale(1.1)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.85)'; this.style.transform='scale(1)'" title="Facebook">
-                    FB
+                <a href="#" class="social-icon" title="Facebook" aria-label="Obserwuj nas na Facebook">
+                    <svg><use href="#icon-facebook"/></svg>
                 </a>
             </div>
         </div>
@@ -61,47 +61,47 @@
                 <li><a href="../../index.html">Strona główna</a></li>
                 <li><a href="../o-nas/index.html">O nas</a></li>
                 <li class="dropdown">
-                    <a href="../oferta/index.html">Oferta</a>
-                    <div class="dropdown-content">
-                        <a href="../oferta/popularne-zabiegi.html">Popularne zabiegi</a>
-                        <a href="../oferta/konsultacje.html">Konsultacje kosmetologiczne</a>
-                        <a href="../oferta/zabiegi-laserowe.html">Zabiegi laserowe</a>
-                        <a href="../oferta/modelujace-sylwetke.html">Zabiegi modelujące sylwetkę</a>
-                        <a href="../oferta/radiofrekwencja.html">Radiofrekwencja i odmładzanie</a>
-                        <a href="../oferta/mezoterapia.html">Mezoterapia i mikronakłuwanie</a>
-                        <a href="../oferta/medycyna-estetyczna.html">Medycyna estetyczna</a>
-                        <a href="../oferta/pielegnacyjne.html">Zabiegi pielęgnacyjne</a>
+                    <a href="../oferta/index.html" class="dropdown-toggle" aria-expanded="false" aria-controls="oferta-menu">Oferta</a>
+                    <div class="dropdown-content" id="oferta-menu" role="menu">
+                        <a href="../oferta/popularne-zabiegi.html" role="menuitem">Popularne zabiegi</a>
+                        <a href="../oferta/konsultacje.html" role="menuitem">Konsultacje kosmetologiczne</a>
+                        <a href="../oferta/zabiegi-laserowe.html" role="menuitem">Zabiegi laserowe</a>
+                        <a href="../oferta/modelujace-sylwetke.html" role="menuitem">Zabiegi modelujące sylwetkę</a>
+                        <a href="../oferta/radiofrekwencja.html" role="menuitem">Radiofrekwencja i odmładzanie</a>
+                        <a href="../oferta/mezoterapia.html" role="menuitem">Mezoterapia i mikronakłuwanie</a>
+                        <a href="../oferta/medycyna-estetyczna.html" role="menuitem">Medycyna estetyczna</a>
+                        <a href="../oferta/pielegnacyjne.html" role="menuitem">Zabiegi pielęgnacyjne</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="../promocje/index.html">Promocje</a>
-                    <div class="dropdown-content">
-                        <a href="../promocje/red-touch.html">Red Touch</a>
-                        <a href="../promocje/dermapen.html">Dermapen</a>
-                        <a href="../promocje/morpheus.html">Morpheus8</a>
-                        <a href="../promocje/multifrax.html">Multifrax</a>
-                        <a href="../promocje/lumecca.html">Lumecca</a>
+                    <a href="../promocje/index.html" class="dropdown-toggle" aria-expanded="false" aria-controls="promocje-menu">Promocje</a>
+                    <div class="dropdown-content" id="promocje-menu" role="menu">
+                        <a href="../promocje/red-touch.html" role="menuitem">Red Touch</a>
+                        <a href="../promocje/dermapen.html" role="menuitem">Dermapen</a>
+                        <a href="../promocje/morpheus.html" role="menuitem">Morpheus8</a>
+                        <a href="../promocje/multifrax.html" role="menuitem">Multifrax</a>
+                        <a href="../promocje/lumecca.html" role="menuitem">Lumecca</a>
                     </div>
                 </li>
                 <li><a href="../galeria/index.html">Galeria</a></li>
                 <li><a href="index.html">Zespół</a></li>
                 <li><a href="../cennik/index.html">Cennik</a></li>
                 <li class="dropdown">
-                    <a href="#" onclick="return false;">Strefa wiedzy</a>
-                    <div class="dropdown-content">
-                        <a href="../strefa-wiedzy/blog.html">Blog</a>
-                        <a href="../strefa-wiedzy/domowe-spa.html">Domowe SPA</a>
-                        <a href="../strefa-wiedzy/darmowy-ebook.html">Ebook</a>
+                    <a href="#" class="dropdown-toggle" aria-expanded="false" aria-controls="strefa-menu">Strefa wiedzy</a>
+                    <div class="dropdown-content" id="strefa-menu" role="menu">
+                        <a href="../strefa-wiedzy/blog.html" role="menuitem">Blog</a>
+                        <a href="../strefa-wiedzy/domowe-spa.html" role="menuitem">Domowe SPA</a>
+                        <a href="../strefa-wiedzy/darmowy-ebook.html" role="menuitem">Ebook</a>
                     </div>
                 </li>
                 <li><a href="../kontakt.html">Kontakt</a></li>
-                <li><a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button" style="margin-left: 1rem;">Rezerwacja online</a></li>
+                <li><a href="javascript:void(0)" onclick="redirectToBooksy()" class="cta-button">Rezerwacja online</a></li>
                 <li class="social-icons">
-                    <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color=\'#E0D0CD\'; this.style.transform=\'scale(1.1)\'" onmouseout="this.style.color=\'rgba(255, 255, 255, 0.85)\'; this.style.transform=\'scale(1)\'" title="Instagram">
-                        IG
+                    <a href="#" class="social-icon" title="Instagram" aria-label="Obserwuj nas na Instagram">
+                        <svg><use href="#icon-instagram"/></svg>
                     </a>
-                    <a href="#" style="color: rgba(255, 255, 255, 0.85); text-decoration: none; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color=\'#E0D0CD\'; this.style.transform=\'scale(1.1)\'" onmouseout="this.style.color=\'rgba(255, 255, 255, 0.85)\'; this.style.transform=\'scale(1)\'" title="Facebook">
-                        FB
+                    <a href="#" class="social-icon" title="Facebook" aria-label="Obserwuj nas na Facebook">
+                        <svg><use href="#icon-facebook"/></svg>
                     </a>
                 </li>
 </ul>
@@ -392,7 +392,7 @@
             </div>
             <div style="display: flex; align-items: center; gap: 1rem;">
                 <a href="javascript:void(0)" onclick="redirectToBooksy()" style="display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" title="Umów wizytę przez Booksy">
-                    <img src="../assets/images/img/logoBooksy/booksy.png" alt="Booksy - Rezerwacje Online" style="height: 40px; width: auto; filter: brightness(0.8);">
+                    <img src="../../assets/images/img/logoBooksy/booksy.png" alt="Booksy - Rezerwacje Online" style="height: 40px; width: auto; filter: brightness(0.8);">
                 </a>
             </div>
         </div>
