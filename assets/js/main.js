@@ -392,8 +392,30 @@ function toggleMobileMenu() {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
+            // Close all dropdowns when closing menu
+            document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
         }
     }
+}
+
+// Mobile Dropdown Toggle
+function toggleMobileDropdown(event, dropdownId) {
+    event.preventDefault();
+    
+    const dropdown = event.currentTarget.closest('.mobile-dropdown');
+    const allDropdowns = document.querySelectorAll('.mobile-dropdown');
+    
+    // Close other dropdowns
+    allDropdowns.forEach(d => {
+        if (d !== dropdown) {
+            d.classList.remove('active');
+        }
+    });
+    
+    // Toggle current dropdown
+    dropdown.classList.toggle('active');
 }
 
 // Close mobile menu when clicking outside
